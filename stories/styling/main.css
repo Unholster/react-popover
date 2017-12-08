@@ -1,0 +1,84 @@
+html {
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+  position: relative;
+}
+
+.Trigger {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  width: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+.custom-styling .Popover-body {
+  background: #FFF;
+  color: #000;
+  border: #000 solid 4px;
+  padding: 1em;
+}
+
+.custom-styling .Popover-tip {
+  border-color: #000;
+  position: relative;
+}
+
+.custom-styling .Popover-tip::after {
+  content: '';
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent;
+  position: absolute;
+}
+
+.custom-styling.Popover-above .Popover-tip {
+  margin-top: -4px;
+}
+
+.custom-styling.Popover-above .Popover-tip::after {
+  bottom: 6px;
+  transform: translateX(-50%);
+  border-top-color: #fff;
+  border-bottom-width: 0;
+}
+
+.custom-styling.Popover-right .Popover-tip {
+  margin-right: -4px;
+}
+
+.custom-styling.Popover-right .Popover-tip::after {
+  bottom: 0;
+  left: 6px;
+  transform: translateY(50%);
+  border-right-color: #fff;
+  border-left-width: 0;
+}
+
+.custom-styling.Popover-below .Popover-tip {
+  margin-bottom: -4px;
+}
+
+.custom-styling.Popover-below .Popover-tip::after {
+  top: 6px;
+  transform: translateX(-50%);
+  border-bottom-color: #fff;
+  border-top-width: 0;
+}
+
+.custom-styling.Popover-left .Popover-tip {
+  margin-left: -4px;
+}
+
+.custom-styling.Popover-left .Popover-tip::after {
+  bottom: 0;
+  right: 6px;
+  transform: translateY(50%);
+  border-left-color: #fff;
+  border-right-width: 0;
+}
