@@ -128,6 +128,7 @@ var Popover = function (_React$Component) {
 
     _this.onPopoverResize = function () {
       log("Recalculating layout because _popover_ resized!");
+      _this.containerEl.style.visibility = "visible";
       _this.measurePopoverSize();
       _this.resolvePopoverLayout();
     };
@@ -522,7 +523,7 @@ var Popover = function (_React$Component) {
 
       var popoverProps = {
         className: "Popover Popover-" + standing + " " + className,
-        style: _extends({}, coreStyle, style)
+        style: _extends({ visibility: "hidden" }, coreStyle, style)
       };
 
       var popover = this.state.exited ? null : _react2.default.createElement(

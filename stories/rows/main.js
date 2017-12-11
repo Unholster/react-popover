@@ -17,6 +17,7 @@ class Row extends React.Component {
     const { isOpen } = this.state
     return (
       <Popover
+        enterExitTransitionDurationMs={0}
         isOpen={isOpen}
         body="!"
         children={
