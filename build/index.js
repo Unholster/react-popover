@@ -127,6 +127,10 @@ var Popover = function (_React$Component) {
     };
 
     _this.onPopoverResize = function () {
+      if (!_this.containerEl) {
+        return;
+      }
+
       log("Recalculating layout because _popover_ resized!");
       _this.containerEl.style.visibility = "visible";
       _this.measurePopoverSize();
