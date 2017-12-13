@@ -204,6 +204,10 @@ var Popover = function (_React$Component) {
   }, {
     key: "resolvePopoverLayout",
     value: function resolvePopoverLayout() {
+      if (!this.containerEl) {
+        return;
+      }
+
       /* Find the optimal zone to position self. Measure the size of each zone and use the one with
       the greatest area. */
 
